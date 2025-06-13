@@ -13,7 +13,7 @@ def f_to_c(f_temp):
 
 # Testing 'f_to_c' function
 f100_in_celsius = f_to_c(100)
-print(f100_in_celsius)
+#print(f100_in_celsius)
 
 # A function the converts Celsius to Fahrenheit
 def c_to_f(c_temp):
@@ -23,7 +23,7 @@ def c_to_f(c_temp):
 
 # Testing 'c_to_f' function
 c0_in_fahrenheit = c_to_f(0)
-print(c0_in_fahrenheit)
+#print(c0_in_fahrenheit)
 
 # USE THE FORCE
 
@@ -48,3 +48,13 @@ def get_energy(mass, c=3*10**8):
 # Getting the energy of the bomb
 bomb_energy = get_energy(bomb_mass)
 print("A 1kg bomb supplies " + str(bomb_energy) + " Joules.")
+
+# DO THE WORK
+
+# A function that calculates Work (defined as force multiplied by distance)
+def get_work(mass, acceleration, distance):
+    return get_force(mass, acceleration) * distance
+
+# Getting the Work of the train
+train_work = get_work(train_mass, train_acceleration, train_distance)
+print("The GE train does " + str(train_work) + " Joules of work over " + str(train_distance) + " meters.")
